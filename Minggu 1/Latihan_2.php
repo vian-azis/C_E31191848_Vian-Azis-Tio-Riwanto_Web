@@ -30,17 +30,17 @@ class Kendaraan {
 
 class CetakInfoKendaraan {
     public function infoKendaraan( Kendaraan $info ) {
-        $str = "Nama : {$info->nama} <br> Jenis : {$info->jenis} <br> Jumlah Roda : {$info->jumlah_roda} <br> Merk : {$info->merk} <br> Bahan Bakar : {$info->bahan_bakar} <br> Harga : Rp ".number_format($info->harga)." <br> Tahun Pembuatan : {$info->tahun_pembuatan}";
+        $str = "Nama : {$info->nama} <br> Jenis : {$info->jenis} <br> Jumlah Roda : {$info->jumlah_roda} <br> Merk : {$info->merk} <br> Bahan Bakar : {$info->bahan_bakar} <br> Harga : Rp ".number_format($info->harga, 0, ",", ".")." <br> Tahun Pembuatan : {$info->tahun_pembuatan}";
         return $str;
     }
 
     public function infoSubsidi( Kendaraan $info ) {
-        $str = "Status Subsidi : {$info->getStatusSubsidi()}";
+        $str = "Status Subsidi BBM : {$info->getStatusSubsidi()}";
         return $str;
     }
 }
 
-$kendaraan1 = new Kendaraan("Kijang KF50", "Mobil", 4, "Toyota", "Premium", 25000000, 1996);
+$kendaraan1 = new Kendaraan("Kijang KF50", "Mobil", 4, "Toyota", "Premium", 100000000, 1996);
 $info_kendaraan1 = new CetakInfoKendaraan();
 echo $info_kendaraan1->infoKendaraan($kendaraan1);
 echo "<br>";
@@ -48,8 +48,8 @@ echo $info_kendaraan1->infoSubsidi($kendaraan1);
 
 echo "<br><br>";
 
-$kendaraan1 = new Kendaraan("Kijang Innova Venturer", "Mobil", 4, "Toyota", "Pertamax", 150000000, 2015);
-$info_kendaraan1 = new CetakInfoKendaraan();
-echo $info_kendaraan1->infoKendaraan($kendaraan1);
+$kendaraan2 = new Kendaraan("Kijang Innova New Venturer", "Mobil", 4, "Toyota", "Pertamax", 400000000, 2021);
+$info_kendaraan2 = new CetakInfoKendaraan();
+echo $info_kendaraan2->infoKendaraan($kendaraan2);
 echo "<br>";
-echo $info_kendaraan1->infoSubsidi($kendaraan1);
+echo $info_kendaraan2->infoSubsidi($kendaraan2);

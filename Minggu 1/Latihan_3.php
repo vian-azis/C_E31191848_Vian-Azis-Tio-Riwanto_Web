@@ -42,17 +42,17 @@ class Kendaraan {
 
 class CetakInfoKendaraan {
     public function infoKendaraan( Kendaraan $info ) {
-        $str = "Nama : {$info->nama} <br> Jenis : {$info->jenis} <br> Jumlah Roda : {$info->jumlah_roda} <br> Merk : {$info->merk} <br> Bahan Bakar : {$info->bahan_bakar} <br> Harga : Rp ".number_format($info->harga)." <br> Tahun Pembuatan : {$info->tahun_pembuatan}";
+        $str = "Nama : {$info->nama} <br> Jenis : {$info->jenis} <br> Jumlah Roda : {$info->jumlah_roda} <br> Merk : {$info->merk} <br> Bahan Bakar : {$info->bahan_bakar} <br> Harga : Rp ".number_format($info->harga, 0, ",", ".")." <br> Tahun Pembuatan : {$info->tahun_pembuatan}";
         return $str;
     }
 
     public function infoSubsidi( Kendaraan $info ) {
-        $str = "Status Subsidi : {$info->getStatusSubsidi()}";
+        $str = "Status Subsidi BBM : {$info->getStatusSubsidi()}";
         return $str;
     }
 
     public function infoHargaSecond( Kendaraan $info ) {
-        $str = "Harga Second : Rp ".number_format($info->hargaSecond());
+        $str = "Harga Second : Rp ".number_format($info->hargaSecond(), 0, ",", ".");
         return $str;
     }
 }

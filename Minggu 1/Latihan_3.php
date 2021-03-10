@@ -71,4 +71,6 @@ $kendaraan2 = new Kendaraan("Kijang Innova New Venturer", "Mobil", 4, "Toyota", 
 $info_kendaraan2 = new CetakInfoKendaraan();
 echo $info_kendaraan2->infoKendaraan($kendaraan2);
 echo "<br>";
+echo $info_kendaraan2->infoSubsidi($kendaraan2);
+echo "<br>";
 echo $info_kendaraan2->infoHargaSecond($kendaraan2);

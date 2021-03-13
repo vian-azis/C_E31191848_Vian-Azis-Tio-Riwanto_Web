@@ -80,3 +80,15 @@ echo '<br>';
 echo "Luas Segitiga = {$objek2->hitungLuasSegitiga(5)}";
 echo '<br>';
 echo "Luas Lingkaran = {$objek3->hitungLuasLingkaran(5)}";
+
+/*
+Output :
+Jika luas sisi = 5
+Luas Persegi = 25
+Luas Segitiga = 12.5
+Luas Lingkaran = 78.539816339745
+
+Penjelasan :
+Karena pada kelas Persei, Segitiga, dan Lingkaran melakukan implements terhadap interface 'hitungLuas',
+maka ditiap-tiap kelas tersebut wajib menggunakan method yang ada didalam kelas interface 'hitungLuas'.
+*/

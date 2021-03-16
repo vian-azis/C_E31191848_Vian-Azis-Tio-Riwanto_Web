@@ -34,6 +34,17 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+$routes->get('/Kode/(:any)', 'Kode::hello/$1');
+
+// $routes->add('/alamat', 'Controller::method');
+// $routes->get('/alamat', 'Controller::method');
+// $routes->get('/alamat', function(){ }); // Anonymous Function
+
+// Custom routes
+// $routes->get('/alamat/(:any)/(:num/alpha/alphanum)', 'Controller::method/$1/$2'); 
+// harus buat routes baru untuk menangani method lain mis : $routes->get('/controller/method', 'Controller::method');
+// $routes->get('/alamat', 'Folder\Controller::method'); // Jika berbeda folder
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

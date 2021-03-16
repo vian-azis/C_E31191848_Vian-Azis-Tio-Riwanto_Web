@@ -39,7 +39,7 @@ $routes->get('/', 'Welcome::index');
 // $routes->get('/alamat', function(){ }); // Anonymous Function
 
 $routes->add('/profil', 'Welcome::profil');
-$routes->add('/contac', 'Welcome::contac');
+$routes->add('/contact', 'Welcome::contact');
 
 // Custom routes
 // $routes->get('/alamat/(:any)/(:num/alpha/alphanum)', 'Controller::method/$1/$2'); 

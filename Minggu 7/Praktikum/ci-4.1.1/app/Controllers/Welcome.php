@@ -14,8 +14,8 @@ class Welcome extends BaseController
         return view('profil');
 	}
 
-    public function contac()
+    public function contact()
 	{
-        return view('contac');
+        return view('contact');
 	}
 }

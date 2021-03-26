@@ -52,10 +52,13 @@
                             <a class="nav-link active" aria-current="page" href="<?php base_url() ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/profil">Profil</a>
+                            <a class="nav-link" href="/mahasiswa">Praktikum 1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact</a>
+                            <a class="nav-link" href="/mahasiswa2">Praktikum 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/mahasiswa3">Praktikum 3</a>
                         </li>
                     </ul>
                 </div>

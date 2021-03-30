@@ -52,6 +52,9 @@
                             <a class="nav-link <?php if(uri_string()=='') echo "active"; ?>" aria-current="page" href="<?= base_url() ?>">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link <?php if(uri_string()=='Template') echo "active"; ?>" href="<?= base_url() ?>Template">Template</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link <?php if(uri_string()=='mahasiswa') echo "active"; ?>" href="<?= base_url() ?>mahasiswa">Mahasiswa</a>
                         </li>
                         <li class="nav-item">

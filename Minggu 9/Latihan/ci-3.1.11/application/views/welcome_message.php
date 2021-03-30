@@ -18,7 +18,7 @@
             </tr>
             <tr>
                 <td>File Praktikum </td>
-                <td> : <a class="btn on-hover" href="<?= base_url() ?>mahasiswa">Daftar Mahasiswa</a> | <a class="btn on-hover" href="<?= base_url() ?>prodi">Daftar Prodi</a> | <a class="btn on-hover" href="<?= base_url() ?>angkatan">Daftar Angkatan</a></td>
+                <td> : <a class="btn on-hover" href="<?= base_url() ?>Template">Template - Agency-GH-Pages</a> | <a class="btn on-hover" href="<?= base_url() ?>mahasiswa">Daftar Mahasiswa</a> | <a class="btn on-hover" href="<?= base_url() ?>prodi">Daftar Prodi</a> | <a class="btn on-hover" href="<?= base_url() ?>angkatan">Daftar Angkatan</a></td>
             </tr>
         </table>
     </div>

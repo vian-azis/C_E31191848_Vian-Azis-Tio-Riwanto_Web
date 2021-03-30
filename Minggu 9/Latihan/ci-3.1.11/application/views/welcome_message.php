@@ -2,7 +2,7 @@
 <main class="flex-shrink-0">
     <div class="container">
         <h1 class="mt-5">Selamat Datang</h1>
-        <p class="lead">Program Minggu 8 - Latihan</p>
+        <p class="lead">Program Minggu 9 - Latihan Helper</p>
         <table>
             <tr>
                 <td>Nama </td>

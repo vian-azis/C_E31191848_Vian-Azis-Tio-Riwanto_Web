@@ -39,7 +39,7 @@ class M_User extends CI_Model
     {
         // Menghasilkan insert string berdasarkan data yang Anda berikan, dan menjalankan kueri. 
         // bisa meneruskan array atau objek ke fungsi.
-        $this->db->insert('tm_user',$data);
+        return $this->db->insert('tm_user',$data);
     }
 
     public function hapusData($id){
@@ -51,6 +51,18 @@ class M_User extends CI_Model
     {
         $this->db->set($data);
         $this->db->where('id', $id);
+        return $this->db->update('tm_user');
+    }
+
+    public function hapusDataApi($username){
+        $this->db->where('username', $username);
+        return $this->db->delete('tm_user');
+    }
+
+    public function ubahDataApi($username, $data)
+    {
+        $this->db->set($data);
+        $this->db->where('username', $username);
         return $this->db->update('tm_user');
     }
 }

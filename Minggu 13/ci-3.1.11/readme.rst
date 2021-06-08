@@ -1,5 +1,5 @@
 ###################
-CARA MENGGUNAKAN
+Tutorial Install
 ###################
 
 1. Install SQL Database yg ada di folder 'database'

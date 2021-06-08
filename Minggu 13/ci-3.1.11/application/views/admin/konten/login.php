@@ -49,10 +49,10 @@ if (!empty($this->session->userdata('ADMIN_ID')) || !empty($this->session->userd
                                         </div>
                                         <form action="<?= base_url('admin/login/auth'); ?>" method="POST" class="user pb-5">
                                             <div class="form-group">
-                                                <input required minlength="4" type="text" class="form-control form-control-user text-dark" id="username" name="username" value="<?php if (!empty(get_cookie('ADMIN_USERNAME'))) echo get_cookie('ADMIN_USERNAME'); ?>" aria-describedby="usernameHelp" placeholder="Masukkan Username..." style="font-size: 15px;">
+                                                <input required maxlength="50" type="text" class="form-control form-control-user text-dark" id="username" name="username" value="<?php if (!empty(get_cookie('ADMIN_USERNAME'))) echo get_cookie('ADMIN_USERNAME'); ?>" aria-describedby="usernameHelp" placeholder="Masukkan Username..." style="font-size: 15px;">
                                             </div>
                                             <div class="form-group">
-                                                <input required minlength="4" type="password" class="form-control form-control-user text-dark" id="password" name="password" placeholder="Password" style="font-size: 15px;">
+                                                <input required maxlength="50" type="password" class="form-control form-control-user text-dark" id="password" name="password" placeholder="Password" style="font-size: 15px;">
                                             </div>
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox small">

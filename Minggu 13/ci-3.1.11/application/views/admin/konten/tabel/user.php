@@ -160,7 +160,7 @@
                                 <label for="password" class="text-dark">Password Baru</label>
                             </div>
                             <div class="col-8 mb-3">
-                                <input required maxlength="6" value="" autocomplete="off" type="password" class="form-control text-dark" id="password" name="password">
+                                <input required value="" autocomplete="off" type="password" class="form-control text-dark" id="password" name="password">
                             </div>
 
                             <div class="col-4 mb-3">

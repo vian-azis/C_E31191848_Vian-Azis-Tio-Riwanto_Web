@@ -40,9 +40,15 @@ class Mahasiswa extends CI_Controller
         $result = $this->M_User->inputData($data);
 
         if ($result == TRUE) {
-            $array = array('success' => true);
+            $array = array(
+                'success' => true,
+                'message' => 'Data "'.$username.'" Berhasil Ditambahkan'
+            );
         } else {
-            $array = array('error' => true);
+            $array = array(
+                'error' => true,
+                'message' => 'Error '.$result
+            );
         }
 
         echo json_encode($array);
@@ -55,9 +61,15 @@ class Mahasiswa extends CI_Controller
         $result = $this->M_User->hapusDataApi($username);
 
         if ($result == TRUE) {
-            $array = array('success' => true);
+            $array = array(
+                'success' => true,
+                'message' => 'Data "'.$username.'" Berhasil Dihapus'
+            );
         } else {
-            $array = array('error' => true);
+            $array = array(
+                'error' => true,
+                'message' => 'Error '.$result
+            );
         }
 
         echo json_encode($array);
@@ -86,9 +98,15 @@ class Mahasiswa extends CI_Controller
         $result = $this->M_User->ubahDataApi($username, $data);
 
         if ($result == TRUE) {
-            $array = array('success' => true);
+            $array = array(
+                'success' => true,
+                'message' => 'Data "'.$username.'" Berhasil Diperbaharui'
+            );
         } else {
-            $array = array('error' => true);
+            $array = array(
+                'error' => true,
+                'message' => 'Error '.$result
+            );
         }
 
         echo json_encode($array);
